@@ -6,7 +6,7 @@
 /*   By: schuah <schuah@student.42kl.edu.my>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/06 13:32:32 by schuah            #+#    #+#             */
-/*   Updated: 2022/09/06 18:42:45 by schuah           ###   ########.fr       */
+/*   Updated: 2022/09/06 18:54:01 by schuah           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -58,7 +58,7 @@ int	main(void)
         }
         catch(const std::exception& e)
         {
-            std::cerr << e.what() << '\n';
+			std::cerr << e.what() << std::endl;
         }
 		try
         {
@@ -67,7 +67,7 @@ int	main(void)
         }
         catch(const std::exception& e)
         {
-            std::cerr << e.what() << '\n';
+			std::cerr << e.what() << std::endl;
         }
 		try
         {
@@ -76,7 +76,7 @@ int	main(void)
         }
         catch(const std::exception& e)
         {
-            std::cerr << e.what() << '\n';
+			std::cerr << e.what() << std::endl;
         }
     }
 	{
