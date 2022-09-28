@@ -106,12 +106,14 @@ long	Span::longestSpan() const
 	return (max - min);
 }
 
+/* Used to print a number */
 static int	print(int n)
 {
 	std::cout << n << std::endl;
 	return (n);
 }
 
+/* Prints everything inside the Span */
 void	Span::printSpan() const
 {
 	std::vector<int>	dummyVector(this->_storage.size(), 0);
