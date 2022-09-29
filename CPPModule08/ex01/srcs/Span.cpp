@@ -6,7 +6,7 @@
 /*   By: schuah <schuah@student.42kl.edu.my>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/06 13:09:43 by schuah            #+#    #+#             */
-/*   Updated: 2022/09/06 18:34:25 by schuah           ###   ########.fr       */
+/*   Updated: 2022/09/29 15:24:08 by schuah           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -86,7 +86,7 @@ long	Span::shortestSpan() const
 	std::copy(this->_storage.begin(), this->_storage.end(), std::back_inserter(copy));
 	std::copy(this->_storage.begin(), this->_storage.end(), std::back_inserter(result));
 	std::sort(copy.begin(), copy.end());
-	std::transform(copy.begin(), copy.end(), copy.begin() + 1, result.begin(), getDistance);
+	std::transform(copy.begin(), copy.end() - 1, copy.begin() + 1, result.begin(), getDistance);
 	return (*std::min_element(result.begin(), result.end()));
 }
 
